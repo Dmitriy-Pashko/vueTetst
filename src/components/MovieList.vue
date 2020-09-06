@@ -16,6 +16,8 @@
       :key="movie.imdbID"
       :movie="movie"
     />
+    <!-- reviewQuestion4: Should I make this button as separate component and just test a props? -->
+    <!-- reviewQuestion4: How component should look like for better testing? -->
     <button class="hello__more"
       v-if="!hasMoreMovies && filterType === ''"
       @click="loadMovies(page)">
